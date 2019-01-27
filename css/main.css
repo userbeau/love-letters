@@ -1,3 +1,75 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: blue;
+  background: white;
+}
+
+h1 {
+  color: #54FF2E;
+  text-align: center;
+  line-height: 100%;
+  font-size: 25pt;
+  font-family: 'Ubuntu Mono', monospace;
+  /* font-weight: 800; */
+}
+
+p {
+  font-size: 18pt;
+  color: #54FF2E;
+  font-family: 'Ubuntu Mono', monospace;
+  /* font-weight: 00; */
+}
+
+nav {
+    text-align: center;
+    /* grid-area: nav; */
+    /* font-weight: 800; */
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 15pt;
+  padding: 1em;
+  color: #54FF2E;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.container {
+  padding: 2em;
+	margin: 0 auto;
+  max-width: 960px;
+	text-align: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  "topper"
+                        "nav"
+                        "letter";
+  grid-gap: 1em;
+  background-color: black;
+}
+
+
+a:link {
+	color: #54FF2E;
+  text-decoration: none;
+}
+
+a:visited {
+	color: #54FF2E;
+}
+
+a:hover {
+	color: #C751CC;
+}
+
+a:active {
+	color: #54FF2E;
 }
