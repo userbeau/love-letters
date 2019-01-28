@@ -8,15 +8,25 @@
 
 body {
   background: white;
+  padding: 2em;
+}
+
+header {
+  grid-area: h1man;
 }
 
 h1 {
   color: #54FF2E;
   text-align: center;
   line-height: 100%;
-  font-size: 25pt;
+  font-size: 20pt;
   font-family: 'Ubuntu Mono', monospace;
+  /* grid-area: topper; */
   /* font-weight: 800; */
+}
+
+h3 {
+  color: #54FF2E;
 }
 
 p {
@@ -28,8 +38,13 @@ p {
 
 nav {
     text-align: center;
-    /* grid-area: nav; */
+    grid-area: nav;
     /* font-weight: 800; */
+}
+
+ul li {
+  color: #54FF2E;
+  list-style: none;
 }
 
 nav ul li {
@@ -41,17 +56,30 @@ nav ul li {
   font-family: 'Ubuntu Mono', monospace;
 }
 
+/*
+.topper {
+  grid-area: topper;
+} */
+
+.letter {
+  grid-area: letter;
+}
+
+.commands {
+  grid-area: commands;
+}
+
 .container {
   padding: 2em;
 	margin: 0 auto;
   max-width: 960px;
 	text-align: left;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:  "topper"
-                        "nav"
-                        "letter";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:  "h1man nav"
+                        "letter commands"
+                        "letter commands";
   grid-gap: 1em;
   background-color: black;
 }
