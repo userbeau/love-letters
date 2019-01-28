@@ -50,16 +50,11 @@ ul li {
 nav ul li {
   list-style: none;
   display: inline-block;
-  font-size: 15pt;
+  font-size: 18pt;
   padding: 1em;
   color: #54FF2E;
   font-family: 'Ubuntu Mono', monospace;
 }
-
-/*
-.topper {
-  grid-area: topper;
-} */
 
 .letter {
   grid-area: letter;
