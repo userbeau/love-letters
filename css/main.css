@@ -7,8 +7,16 @@
 }
 
 body {
-  background: white;
+  /* background-image: url("/img/windowsxp.jpg") no-repeat fixed center center; */
   padding: 2em;
+}
+
+.bimage {
+       background: url("../img/windowsxp.jpg") no-repeat fixed center center;
+   }
+
+.bimage2 {
+  background: url("../img/paper.jpg") no-repeat fixed center center;
 }
 
 header {
@@ -56,6 +64,10 @@ nav ul li {
   font-family: 'Ubuntu Mono', monospace;
 }
 
+.paddingnone {
+  padding: 0;
+}
+
 .letter {
   grid-area: letter;
 }
@@ -79,6 +91,33 @@ nav ul li {
   background-color: black;
 }
 
+.container2 {
+  padding: 1em;
+	margin: 0 auto;
+  max-width: 960px;
+	text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:  "h1man nav"
+                        "letter commands"
+                        "letter commands";
+  grid-gap: 1em;
+  /* background-color: black; */
+}
+
+.gitfont {
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bigfont{
+  font-size: 20pt;
+}
+
+.smallfont {
+  font-size: 15pt;
+}
 
 a:link {
 	color: #54FF2E;
@@ -95,4 +134,21 @@ a:hover {
 
 a:active {
 	color: #54FF2E;
+}
+
+#Nav a {
+    color: black;
+}
+
+#Nav a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+#Nav a:visited {
+    color: black;
+}
+
+#Nav a:active {
+    color: red;
 }
