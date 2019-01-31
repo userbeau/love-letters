@@ -57,6 +57,7 @@ nav {
 ul li {
   color: #54FF2E;
   list-style: none;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 nav ul li {
