@@ -134,6 +134,10 @@ nav ul li {
   color: black;
   font-family: 'Merriweather', serif;
 }
+.githubtitlefont {
+  color: white;
+  font-family: 'Merriweather', serif;
+}
 
 .bigfont{
   font-size: 20pt;
@@ -141,6 +145,11 @@ nav ul li {
 
 .smallfont {
   font-size: 15pt;
+}
+
+.blackness {
+  background-color: black;
+  opacity: .5;
 }
 
 a:link {
@@ -177,19 +186,24 @@ a:active {
     color: red;
 }
 
+#Nav2 {
+  background-color: black;
+  opacity: .5;
+}
+
 #Nav2 a:link {
-    color: black;
+    color: white;
 }
 
 #Nav2 a:visited {
-    color: black;
+    color: white;
 }
 
 #Nav2 a:hover {
-    color: yellow;
+    color: red;
     text-decoration: none;
 }
 
 #Nav2 a:active {
-    color: yellow;
+    color: red;
 }
