@@ -19,6 +19,10 @@ body {
   background: url("../img/paper.jpg") no-repeat fixed center center;
 }
 
+.bimage3 {
+  background: url("../img/email.jpg") no-repeat fixed center center;
+}
+
 header {
   grid-area: h1man;
 }
@@ -106,9 +110,29 @@ nav ul li {
   /* background-color: black; */
 }
 
+.container3 {
+  padding: 1em;
+	margin: 0 auto;
+  max-width: 960px;
+	text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:  "h1man nav"
+                        "letter commands"
+                        "letter commands";
+  grid-gap: 1em;
+  /* background-color: rgba(0,0,0,.5); */
+}
+
 .gitfont {
   color: black;
   font-family: 'Permanent Marker', cursive;
+}
+
+.githubfont {
+  color: black;
+  font-family: 'Merriweather', serif;
 }
 
 .bigfont{
@@ -136,7 +160,11 @@ a:active {
 	color: #54FF2E;
 }
 
-#Nav a {
+#Nav a:link {
+    color: black;
+}
+
+#Nav a:visited {
     color: black;
 }
 
@@ -145,10 +173,23 @@ a:active {
     text-decoration: none;
 }
 
-#Nav a:visited {
+#Nav a:active {
+    color: red;
+}
+
+#Nav2 a:link {
     color: black;
 }
 
-#Nav a:active {
-    color: red;
+#Nav2 a:visited {
+    color: black;
+}
+
+#Nav2 a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+#Nav2 a:active {
+    color: yellow;
 }
